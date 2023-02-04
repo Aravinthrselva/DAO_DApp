@@ -163,7 +163,7 @@ const fetchAllProposals = async() => {
   try {
     const proposals = [];
     for(let i=0; i<numProposals; i++) {
-      const proposal = fetchProposalById(i);
+      const proposal = await fetchProposalById(i);
       proposals.push(proposal);
     }
     setProposals(proposals);
