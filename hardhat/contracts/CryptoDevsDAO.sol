@@ -64,7 +64,6 @@ function createProposal(uint256 _nftTokenId) external nftHolderOnly returns (uin
     numProposals++;
 
     return numProposals - 1;
-
 }
 
 modifier activeProposalOnly(uint256 proposalIndex) {
